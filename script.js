@@ -77,3 +77,4 @@ async function createAnswer(offer, from) {
   await peerConnection.setLocalDescription(answer);
   send('answer', from, answer);
 }
+const socket = new WebSocket(`${location.protocol === 'https:' ? 'wss:' : 'ws:'}//${location.host}`);
