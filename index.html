@@ -1,0 +1,21 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Call</title>
+  <style>
+    video { width: 45%; margin: 10px; border: 2px solid #444; }
+  </style>
+</head>
+<body>
+  <h2>Video Call</h2>
+  <p>Your ID: <input id="my-id" /></p>
+  <p>Call To: <input id="friend-id" /></p>
+  <button onclick="startCall()">Call</button>
+  <br><br>
+  <video id="localVideo" autoplay muted></video>
+  <video id="remoteVideo" autoplay></video>
+
+  <script src="script.js"></script>
+</body>
+</html>
